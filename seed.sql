@@ -28,6 +28,9 @@ VALUES
 
 SELECT * FROM internet_shop.orders;
 
+DELETE FROM internet_shop.orders
+WHERE order_id=2;
+
 INSERT INTO internet_shop.order_items (order_id, product_id, quantity)
 VALUES
     (5, 1, 4),
@@ -37,3 +40,7 @@ VALUES
     (2, 5, 7);
 
 SELECT * FROM internet_shop.order_items;
+
+DELETE FROM internet_shop.order_items
+WHERE order_id = 5;
+
